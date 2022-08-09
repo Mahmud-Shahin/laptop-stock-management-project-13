@@ -1,14 +1,19 @@
-
+import {Route, Routes} from 'react-router-dom'
 import './App.css';
-
-import { getAuth } from "firebase/auth";
-import app from './firebase.init';
-const auth = getAuth(app)
-
+import About from './Pages/About/About';
+import Home from './Pages/Home/Home/Home';
+import Footer from './Pages/Share/Footer/Footer';
+import Header from './Pages/Share/Header/Header';
 function App() {
   return (
-    <div className="App">
-      <h1>Laptop Stock Management Website</h1>
+    <div>
+
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+      </Routes>
+      <Footer></Footer>
 
 
      

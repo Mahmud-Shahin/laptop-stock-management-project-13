@@ -1,57 +1,57 @@
 [
     {
-        
+        "id": "08",
         "name": "apple laptop",
-        "img": "",
+        "img": "https://i.ibb.co/WnhKvLy/wesson-wang-y0-v-Fx-OHayg-unsplash.png",
         "description": "this is 9th genaration laptop.",
         "price": "100000",
         "quantity": "10",
-        "supplier name": "Abul hasem"
+        "supplier_name": "Abul hasem"
     },
     {
-        
+        "id": "09",
         "name": "dell laptop",
-        "img": "",
+        "img": "https://i.ibb.co/B39vGFH/greg-rosenke-i-Z4-QZFb-Q2-S8-unsplash.png",
         "description": "this is 8th genaration laptop.",
         "price": "80000",
         "quantity": "20",
-        "supplier name": "selim khan"
+        "supplier_name": "selim khan"
     },
     {
-        
+        "id": "10",
         "name": "hp laptop",
-        "img": "",
+        "img": "https://i.ibb.co/0GG5YQW/Hp.png",
         "description": "this is 7th genaration laptop.",
         "price": "80000",
         "quantity": "30",
-        "supplier name": "Kashem ali"
+        "supplier_name": "Kashem ali"
     },
     {
-        
+        "id": "12",
         "name": "asus laptop",
-        "img": "",
+        "img": "https://i.ibb.co/M2trTQ7/Asus.png",
         "description": "this is 6th genaration laptop.",
         "price": "700000",
         "quantity": "40",
-        "supplier name": "karim Sahab"
+        "supplier_name": "karim Sahab"
     },
     {
-        
+        "id": "14",
         "name": "samsung laptop",
-        "img": "",
+        "img": "https://i.ibb.co/NtB61mg/Samsung.png",
         "description": "this is 5th genaration laptop.",
         "price": "60000",
         "quantity": "50",
-        "supplier name": "Shahin mahmud"
+        "supplier_name": "Shahin mahmud"
     },
     {
-        
+        "id": "16",
         "name": "Lenovo laptop",
-        "img": "",
+        "img": "https://i.ibb.co/KhNy8db/Lenovo.png",
         "description": "this is 4th genaration laptop.",
         "price": "60000",
         "quantity": "60",
-        "supplier name": "Rocky"
+        "supplier_name": "Rocky"
     }
         
 ]      
