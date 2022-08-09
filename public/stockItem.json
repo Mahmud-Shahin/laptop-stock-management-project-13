@@ -1,0 +1,61 @@
+[
+    {
+        
+        "name": "apple laptop",
+        "img": "",
+        "description": "this is 9th genaration laptop.",
+        "price": "100000",
+        "quantity": "10",
+        "supplier name": "Abul hasem"
+    },
+    {
+        
+        "name": "dell laptop",
+        "img": "",
+        "description": "this is 8th genaration laptop.",
+        "price": "80000",
+        "quantity": "20",
+        "supplier name": "selim khan"
+    },
+    {
+        
+        "name": "hp laptop",
+        "img": "",
+        "description": "this is 7th genaration laptop.",
+        "price": "80000",
+        "quantity": "30",
+        "supplier name": "Kashem ali"
+    },
+    {
+        
+        "name": "asus laptop",
+        "img": "",
+        "description": "this is 6th genaration laptop.",
+        "price": "700000",
+        "quantity": "40",
+        "supplier name": "karim Sahab"
+    },
+    {
+        
+        "name": "samsung laptop",
+        "img": "",
+        "description": "this is 5th genaration laptop.",
+        "price": "60000",
+        "quantity": "50",
+        "supplier name": "Shahin mahmud"
+    },
+    {
+        
+        "name": "Lenovo laptop",
+        "img": "",
+        "description": "this is 4th genaration laptop.",
+        "price": "60000",
+        "quantity": "60",
+        "supplier name": "Rocky"
+    }
+        
+]      
+
+       
+    
+
