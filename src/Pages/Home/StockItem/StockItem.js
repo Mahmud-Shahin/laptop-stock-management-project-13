@@ -14,7 +14,7 @@ const StockItem = ({stockItem}) => {
                     <h4>Quantity: {quantity}</h4>
                     <h5>supplier name: {supplier_name}</h5>
                     <div>
-                         <button class="btn btn-primary mx-auto" type="button">Update Stock</button>
+                         <button class="btn btn-dark mx-auto" type="button">Update Stock</button>
                     </div>
 
                 </div>
