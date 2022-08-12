@@ -1,8 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const StockItem = ({stockItem}) => {
-    const {name, img , description , price , quantity , supplier_name} = stockItem
+    const {id ,name, img , description , price , quantity , supplier_name} = stockItem;
+    const navigate = useNavigate();
+      const transferToStockItemDetails = id => {
+        navigate(`/stockItem/${id}`);
+
+
+      }
     return (
+         
         <div>
             <div className="card-group mt-5">
                 <div className="card g-5 h-100 col-sm-12 col-md-6 col-lg-4 ">
@@ -14,7 +22,7 @@ const StockItem = ({stockItem}) => {
                     <h4>Quantity: {quantity}</h4>
                     <h5>supplier name: {supplier_name}</h5>
                     <div>
-                         <button class="btn btn-dark mx-auto" type="button">Update Stock</button>
+                         <button onClick={() => transferToStockItemDetails(id)}  class="btn btn-dark mx-auto" type="button">Stock Update</button>
                     </div>
 
                 </div>
@@ -33,21 +41,7 @@ const StockItem = ({stockItem}) => {
 
 
             
-            {/* <div className="card-group mt-5">
-                <div className="card g-5 h-100 col-sm-12 col-md-6 col-lg-4 ">
-                    <img src={img} alt="" />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">{name}</h5>
-                        <h3>Price:$ {price}</h3>
-                        <p className="card-text">{description}</p>
-                        <div>
-                            <button onClick={() => navigateServiceDetails(_id)} class="btn btn-primary mx-auto" type="button">Button</button>
-                        </div>
-                    </div>
-                </div >
-
-            </div > */}
-
+           
 
 
         </div>

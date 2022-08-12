@@ -14,8 +14,11 @@ const StockItems = () => {
 
     return (
 
-        <div className='container'>
+        <div id='stockItems' className='container'>
+            
             <h2 className='text-center'>My StockItems</h2>
+
+
 
             <div className='row row-cols-lg-3 g-4'>
                 {
