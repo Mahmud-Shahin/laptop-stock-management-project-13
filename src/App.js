@@ -9,6 +9,9 @@ import NotFound from './Pages/Share/Notfound/NotFound';
 import StockItemDetails from './Pages/StockItemDetails/StockItemDetails';
 import Register from './Pages/Register/Register';
 import StockItems from './Pages/Home/StockItems/StockItems';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import PrivateAuth from './Pages/Login/PrivateAuth/PrivateAuth';
+
 
 function App() {
   return (
@@ -23,6 +26,12 @@ function App() {
         <Route path='/stockItem/:stockItemId' element={<StockItemDetails></StockItemDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/manageInventories' element={
+          <PrivateAuth> 
+            <ManageInventories></ManageInventories>
+          </PrivateAuth>
+        }></Route>
+        
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

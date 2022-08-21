@@ -1,8 +1,17 @@
 // import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate, Link } from 'react-router-dom';
+import auth from '../../firebase.init';
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 //     const referenceEmail = useRef('');
 //     const referencePass  = useRef('');
 //     const controllogin = event =>{
@@ -18,7 +27,7 @@ const Login = () => {
         event.preventDefault();
         const email = event.target.email.value;
         const password =  event.target.password.value;
-        console.log( email, password);
+        signInWithEmailAndPassword(email, password);
        
       } 
 
@@ -28,6 +37,10 @@ const Login = () => {
 
         clicknavigate('/register')
 
+    }
+
+    if(user){
+      clicknavigate('/home')
     }
 
 
@@ -56,7 +69,7 @@ const Login = () => {
 
 
 
-
+      <SocialLogin></SocialLogin>
 
             
         </div>

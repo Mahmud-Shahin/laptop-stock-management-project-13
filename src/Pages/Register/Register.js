@@ -1,8 +1,18 @@
 // import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Register = () => {
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
+
 //     const referenceName = useRef('');
 //     const referenceEmail = useRef('');
 //     const referencePass  = useRef('');
@@ -21,7 +31,8 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password =  event.target.password.value;
-        console.log(name, email, password);
+        
+        createUserWithEmailAndPassword(email, password);
        
       }  
 
@@ -32,6 +43,10 @@ const Register = () => {
 
         lognavigate('/login')
 
+    }
+
+    if(user){
+      lognavigate('/home');
     }
 
     return (
@@ -63,8 +78,13 @@ const Register = () => {
        register
       </Button>
     </Form>
+   
     <p>already have an account?  <Link to="/login" className='text-primary text-decoration-none' onClick={clicklogin}>Please login</Link></p>
+
+      <SocialLogin></SocialLogin>
+
         </div>
+        
     );
 };
 
