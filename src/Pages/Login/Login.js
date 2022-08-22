@@ -6,6 +6,17 @@ import auth from '../../firebase.init';
 import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
+
+  // let errorElement;
+
+  // if(error) {
+       
+  //   errorElement = <div>
+  //       <p className='text-danger'>Error:{error?.message}</p>
+  //     </div>
+   
+  // }
+
   const [
     signInWithEmailAndPassword,
     user,
@@ -65,6 +76,7 @@ const Login = () => {
         login
       </Button>
     </Form>
+    {/* {errorElement} */}
      <p>Dont't you have account? <Link to='/register' className='text-primary text-decoration-none' onClick={clickRegister} >Please Register</Link></p>
 
 

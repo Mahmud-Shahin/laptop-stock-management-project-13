@@ -7,7 +7,8 @@ const StockItems = () => {
     const [stockItems, setStockItems] = useState([]);
 
     useEffect(() =>{
-        fetch('stockItem.json')
+        
+        fetch('http://localhost:5000/stocksItem')
         .then(res => res.json())
         .then(data => setStockItems(data));
     },[])
@@ -23,7 +24,7 @@ const StockItems = () => {
             <div className='row row-cols-lg-3 g-4'>
                 {
                stockItems.map(stockItem => <StockItem 
-               key={stockItem.id}
+               key={stockItem._id}
                stockItem = {stockItem}
                >
                 </StockItem>) 

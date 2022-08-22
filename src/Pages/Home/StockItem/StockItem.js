@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const StockItem = ({stockItem}) => {
-    const {id ,name, img , description , price , quantity , supplier_name} = stockItem;
+    const { _id ,name, img , description , price , quantity , supplier_name} = stockItem;
     const navigate = useNavigate();
       const transferToStockItemDetails = id => {
         navigate(`/stockItem/${id}`);
@@ -12,7 +12,7 @@ const StockItem = ({stockItem}) => {
     return (
          
         <div>
-            <div className="card-group mt-5">
+            <div className="card-group mt-5 ">
                 <div className="card g-5 h-100 col-sm-12 col-md-6 col-lg-4 ">
                 <img src={img} alt="" />
                 <div className="card-body text-center">
@@ -22,7 +22,7 @@ const StockItem = ({stockItem}) => {
                     <h4>Quantity: {quantity}</h4>
                     <h5>supplier name: {supplier_name}</h5>
                     <div>
-                         <button onClick={() => transferToStockItemDetails(id)}  class="btn btn-dark mx-auto" type="button">Stock Update</button>
+                         <button onClick={() => transferToStockItemDetails(_id)}  class="btn btn-dark mx-auto" type="button">Stock Update</button>
                     </div>
 
                 </div>
