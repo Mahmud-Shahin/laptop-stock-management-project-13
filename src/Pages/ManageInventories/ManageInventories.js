@@ -1,6 +1,8 @@
 import React from 'react';
-import AddstockItem from '../AddstockItem/AddstockItem';
+
 import UseStockItems from '../UseStockItems/UseStockItems';
+import {Link} from 'react-router-dom';
+import Table from 'react-bootstrap/Table';
 
 
 
@@ -26,28 +28,82 @@ const ManageInventories = () => {
      }
     return (
         <div> 
-            <div>
-                     <AddstockItem></AddstockItem> <br />
-            </div>
-
-
-            <div className='w-25 mx-auto'>
-        
-            {
+            
+         <div className='w-75 mx-auto'>
+              {
                 stockItems.map(stockItem => <div key={stockItem._id}> 
-                    <h5>{stockItem.name}   <button onClick={()=> handleDelievered(stockItem._id) } className='btn btn-dark'>Delievered</button></h5>
-                </div>)
-            }
+                  <Table striped bordered hover>
+            <thead>
+                  <tr>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Quantity</th>
+                     <th>Supplier name</th>
+                    <th>Description</th>
+                    <th></th>
+                 </tr>
+            </thead>
+                   
+        <tbody>
+             <tr>
+              <td> {stockItem.name} </td>
+              <td> {stockItem.price}</td>
+              <td> {stockItem.quantity}</td>
+              <td> {stockItem.supplier_name}</td>
+              <td>{stockItem.description}</td>
+              <td> <button onClick={()=> handleDelievered(stockItem._id) } className='btn btn-dark mb-4'>Delete</button></td>
+           </tr>
+        </tbody>
+    </Table>
+         </div>)
+        }
+         
+      </div>  
+                   
+                
+           <div className='text-center mt-5'>
+                <Link to='/addstockItem'>
+                    <button className='btn btn-dark'>add new item</button>
+                </Link>
+            </div>
+                 
+        </div>       
+   
+        
+ );
+ };
+
+export default ManageInventories;
+          
                
+            
+      
+                   
            
-        </div> 
-        </div>
+        
+    
+        
+     
+
+
+      
+      
+    
+
+
+
+                    
+       
+               
+        
+
+
+
+
+
+   
          
             
      
        
        
-    );
-};
-
-export default ManageInventories;

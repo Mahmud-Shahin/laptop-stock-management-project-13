@@ -32,9 +32,9 @@ const AddstockItem = () => {
                 <textarea className='mb-2 border border-dark border-1' placeholder='description' {...register("description")} />
                 <input className='mb-2 border border-dark border-1' placeholder='price' type="number" {...register("price")} />
                 <input className='mb-2 border border-dark border-1' placeholder='quantity' type="number" {...register("quantity")} />
-                <input className='mb-2 border border-dark border-1' placeholder='supplier name' {...register("supplier name")} />
+                <input className='mb-2 border border-dark border-1' placeholder='supplier_name' {...register("supplier_name")} />
                
-                <input className='btn btn-secondary'  type="submit"  value="Add stockItem" />
+                <input className='btn btn-secondary'  type="submit"  value="Add new item" />
             </form>
             
         </div>

@@ -12,6 +12,7 @@ import StockItems from './Pages/Home/StockItems/StockItems';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import PrivateAuth from './Pages/Login/PrivateAuth/PrivateAuth';
 import AddstockItem from './Pages/AddstockItem/AddstockItem';
+import Myitems from './Pages/MyItems/Myitems';
 
 
 function App() {
@@ -36,6 +37,11 @@ function App() {
         <Route path='/addstockItem' element={
           <PrivateAuth> 
             <AddstockItem></AddstockItem>
+          </PrivateAuth>
+        }></Route>
+        <Route path='/myitems' element={
+          <PrivateAuth> 
+            <Myitems></Myitems>
           </PrivateAuth>
         }></Route>
         
