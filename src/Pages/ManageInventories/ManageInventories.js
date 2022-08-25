@@ -30,22 +30,26 @@ const ManageInventories = () => {
         <div> 
             
          <div className='w-75 mx-auto'>
-              {
-                stockItems.map(stockItem => <div key={stockItem._id}> 
-                  <Table striped bordered hover>
-            <thead>
+          <Table striped bordered hover>
+             
+                 <thead>
                   <tr>
                      <th>Name</th>
                      <th>Price</th>
                      <th>Quantity</th>
                      <th>Supplier name</th>
-                    <th>Description</th>
-                    <th></th>
+                     <th>Description</th>
+                     <th>Button</th>
+                    
                  </tr>
             </thead>
-                   
-        <tbody>
-             <tr>
+            </Table>
+
+              {
+                stockItems.map(stockItem => <div key={stockItem._id}> 
+             <Table striped bordered hover>
+            <tbody>
+            <tr>
               <td> {stockItem.name} </td>
               <td> {stockItem.price}</td>
               <td> {stockItem.quantity}</td>
@@ -54,14 +58,13 @@ const ManageInventories = () => {
               <td> <button onClick={()=> handleDelievered(stockItem._id) } className='btn btn-dark mb-4'>Delete</button></td>
            </tr>
         </tbody>
-    </Table>
-         </div>)
+    </Table>    
+             </div>)
         }
-         
-      </div>  
-                   
-                
-           <div className='text-center mt-5'>
+                                 
+    </div>  
+              
+            <div className='text-center mt-5'>
                 <Link to='/addstockItem'>
                     <button className='btn btn-dark'>add new item</button>
                 </Link>
@@ -73,7 +76,15 @@ const ManageInventories = () => {
  );
  };
 
-export default ManageInventories;
+export default ManageInventories; 
+                   
+        
+     
+         
+      
+                   
+                
+
           
                
             

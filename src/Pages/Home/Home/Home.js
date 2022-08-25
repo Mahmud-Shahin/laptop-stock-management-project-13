@@ -16,6 +16,7 @@ const Home = () => {
         </div>
 
             <StockItems></StockItems>
+            
             <div className='text-center mt-5'>
                 <Link to='/manageInventories'>
                     <button className='btn btn-dark'> manage Inventories</button>
