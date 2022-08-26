@@ -11,7 +11,7 @@ const ManageInventories = () => {
      const [stockItems, setStockItems ] = UseStockItems();
 
      const handleDelievered = id =>{
-        const windowpopup = window.confirm(' Are you sure you want to Deliever this item?');
+        const windowpopup = window.confirm(' Are you sure you want to Delete this item?');
         if(windowpopup){
             fetch(`http://localhost:5000/stocksItem/${id}`, {
                 method: 'DELETE'

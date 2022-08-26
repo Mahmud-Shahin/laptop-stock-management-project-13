@@ -1,56 +1,39 @@
 
 import { Carousel } from 'react-bootstrap';
 import React from 'react';
+import './slider.css'
 
-import slider1 from '../../../images/slider/slider1.jpg'
+
 import slider2 from '../../../images/slider/slider2.jpg'
-import slider3 from '../../../images/slider/slider3.jpg'
 import slider4 from '../../../images/slider/slider4.jpg'
 import slider5 from '../../../images/slider/slider5.jpg'
 
 const Slider = () => {
     return (
       
-        <div className='mb-3'>  
+        <div className='mb-3  '>  
 
       <Carousel>
+     
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={slider1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={slider2}
+          src={slider5}
           alt="Second slide"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={slider3}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        <Carousel.Caption className='  mx-auto slider' >
+        <h1 className='display-1 mb-4'>Laptop Wirehouse management website</h1>
+          <p className=' mb-4'>Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
+          Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
           </p>
+          <button className='btn btn-primary'>ManageStock</button>
         </Carousel.Caption>
       </Carousel.Item>
+
+     
+
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -58,25 +41,28 @@ const Slider = () => {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+       <Carousel.Caption className='  mx-auto slider' >
+        <h1 className='display-1 mb-4'>Laptop Wirehouse management website</h1>
+          <p className=' mb-4'>Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
+          Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
           </p>
+          <button className='btn btn-primary'>ManageStock</button>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={slider5}
+          src={slider2}
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+     <Carousel.Caption className='  mx-auto slider' >
+        <h1 className='display-1 mb-4'>Laptop Wirehouse management website</h1>
+          <p className=' mb-4'>Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
+          Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
           </p>
+          <button className='btn btn-primary'>ManageStock</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
