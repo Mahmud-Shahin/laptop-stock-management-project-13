@@ -13,6 +13,8 @@ import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import PrivateAuth from './Pages/Login/PrivateAuth/PrivateAuth';
 import AddstockItem from './Pages/AddstockItem/AddstockItem';
 import Myitems from './Pages/MyItems/Myitems';
+import GeneralInformation from './Pages/GeneralInformation/GeneralInformation';
+import WareHousing from './Pages/WareHousing/WareHousing';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path='/stockItem/:stockItemId' element={<StockItemDetails></StockItemDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/generalInformation' element={<GeneralInformation></GeneralInformation>}></Route>
+        <Route path='/wareHousing' element={<WareHousing></WareHousing>}></Route>
         <Route path='/manageInventories' element={
           <PrivateAuth> 
             <ManageInventories></ManageInventories>
