@@ -11,7 +11,7 @@ const GeneralInformation = () => {
       <h2 className="text-center mt-5">General Information</h2>
 
       <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="Our mission"
         id="justify-tab-example"
         className="mb-5 container mt-5"
         justify
